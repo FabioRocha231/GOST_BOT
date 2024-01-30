@@ -16,6 +16,7 @@ module.exports = {
     .setDefaultMemberPermissions(PermissionFlagsBits.BanMembers)
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
     .setDefaultMemberPermissions(PermissionFlagsBits.MoveMembers),
+
   async execute(interaction: CommandInteraction) {
     const meetGost = new GostButtons("Sobre a G.O.S.T", ButtonStyle.Link)
       .setEmoji({ name: "Gost2", id: "1187452556276936804" })

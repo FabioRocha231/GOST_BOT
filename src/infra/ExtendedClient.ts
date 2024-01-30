@@ -60,6 +60,7 @@ class ExtendedClient extends Client {
         const command = require(filePath);
 
         if ("data" in command && "execute" in command) {
+          console.log(command.data);
           this.commandsToPUT.push(command.data.toJSON());
           this.commands.set(command.data.name, command);
         } else {
